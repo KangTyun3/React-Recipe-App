@@ -25,7 +25,7 @@ function Veggie() {
   return (
       <div>
           <Wrapper>
-              <h5>Our Vegetarian Picks</h5>
+              <h3>Our Vegetarian Picks</h3>
               <Splide options={{ perPage: 3, pagination:true, drag: 'free', arrows: false,gap:'3rem',breakpoints: {
 		1100: {
 			perPage: 3,
@@ -57,10 +57,15 @@ function Veggie() {
 const Wrapper = styled.div `
   margin: 4rem ;
   border-radius:2rem;
+  h3{
+     font-weight:500;
+  }
     @media (max-width: 768px) {
     h3 {
-      font-size: 1rem;
+      font-size: 1.2rem;
+     
     }
+    margin: 2rem ;
   }
 `;
 const Card = styled.div `

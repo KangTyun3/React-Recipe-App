@@ -38,6 +38,7 @@ margin:0 5rem;
   grid-gap: 3rem;
   @media (max-width: 865px) {
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    margin:0 2rem;
    
   }
 `;

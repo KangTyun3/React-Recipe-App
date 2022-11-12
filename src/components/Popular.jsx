@@ -23,7 +23,7 @@ function Popular() {
   return (
     <div>
       <Wrapper>
-        <h5>Our Popular Picks</h5>
+        <h3>Our Popular Picks</h3>
         <Splide options={{
           perPage: 4, pagination: false, arrows: false, drag: 'free', gap: '3rem', breakpoints: {
           1100: {
@@ -53,7 +53,15 @@ function Popular() {
 const Wrapper = styled.div `
   margin: 4rem ;
   border-radius:2rem;
-  
+  h3{
+     font-weight:500;
+  }
+    @media (max-width: 768px) {
+    h3 {
+      font-size: 1.2rem;
+    }
+    margin:4rem 2rem ;
+  }
   }
 `;
 const Card = styled.div `

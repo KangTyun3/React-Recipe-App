@@ -31,8 +31,8 @@ function Recipe() {
               </div>
               <Info>
                   {activeTab === 'Instructions' ? <div>
-                     <br></br> <h4>Summary</h4>
-                      <p dangerouslySetInnerHTML={{ __html: recipe.summary }}></p><br></br>
+                      <h4>Summary</h4>
+                      <p dangerouslySetInnerHTML={{ __html: recipe.summary }}></p>
                        <h4>Instructions</h4>
                   <p dangerouslySetInnerHTML={{ __html: recipe.instructions }}></p> <br></br><br></br>
                   </div> : 
@@ -64,6 +64,7 @@ const DetailWrapper = styled.div `
  
   h3 {
     font-size: 1.5rem;
+    font-weight: 550;
     margin-bottom: 2rem;
   }
    @media (max-width: 450px) {
@@ -144,6 +145,7 @@ const Info = styled.div `
   h4{
     font-size:1.4rem;
     font-weight:500;
+    margin-bottom:-3px;
    
   }
    p {

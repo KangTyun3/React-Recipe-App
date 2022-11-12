@@ -64,15 +64,16 @@ const SLink = styled(NavLink)`
       color: white;
     }
   }
-  
- 
   @media (max-width: 768px) {
-    margin: 0.5rem 0;
-    width: 4rem;
-    height: 4rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 25%;
+    margin-right:0;
+    
     h4 {
-      font-size: 0.5rem;
+      font-size: 0.8rem;
     }
   }
+
 `;
 export default Navbar

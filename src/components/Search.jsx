@@ -19,7 +19,7 @@ function Search() {
   return (
       <div style={{display:'flex' }}>
           <Link to="/" style={{display:'flex' }}>
-            <h5 className='name' style={{marginLeft:'60px',marginTop:'30px' }}>Tasty</h5><Logo /></Link>
+            <h3 className='name' style={{marginLeft:'60px',marginTop:'30px' }}>Tasty</h3><Logo /></Link>
           <FormStyle onSubmit={submitFun}>
               <FaSearch />
               <input onChange={(event) => setInput(event.target.value)}  /> 
